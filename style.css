@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('img/bg-mobile.svg');
+    /*Center the image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-bottom: 100px;
+}
+
+.img-riot-games {
+    width: 40px;
+}
+
+
+.img-league-of-legends {
+    width: 24px;
+}
+
+.img-separacao {
+    height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img-netflix {
+    width: 60px;
+}
+
+/* logo */
+.content-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-arcane {
+    width: 300px;
+}
+
+/* conteudo do trailer */
+
+.content-trailer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+
+.title-button {
+    position: absolute;
+    padding-left: 110px;
+    padding-top: 10px;
+    color: black;
+}
+
+.body-film {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.rectangle-mobile {
+    position: relative;
+}
+
+.rectangle-desktop {
+    display: none;
+}
+
+.content-film {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+.title-film {
+    font-size: 15px;
+    width: 100px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.p-film {
+    font-size: 13px;
+    color: #585858;
+}
+
+.film {
+    background-image: url(img/video.svg);
+    width: 144px;
+    height: 107px;
+    position: absolute;
+    margin-right: 160px;
+    margin-top: 13px;
+}
+
+.play {
+    position: relative;
+    left: 50px;
+    top: 35%;
+}
+
+@media screen and (min-width:720px) {
+    body {
+        height: 150vh;
+        background-image: url('img/bg-arcane.svg');
+        background-position: right;
+        /*Center the image*/
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img-riot-games {
+        width: 80px;
+    }
+
+    .img-league-of-legends {
+        width: 50px;
+    }
+
+    .img-separacao {
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .img-netflix {
+        width: 110px;
+    }
+
+    .img-arcane {
+        width: 650px;
+    }
+
+    .rectangle-mobile {
+        width: 300px;
+    }
+
+    .film {
+        background-image: url('img/video.svg');
+        width: 144px;
+        height: 107px;
+        position: absolute;
+        margin-right: 200px;
+        margin-top: 15px;
+    }
+
+    .content-film {
+        margin-left: 130px;
+        padding-right: 10px;
+    }
+
+    .title-film {
+        font-size: 18px;
+        width: 150px;
+        margin-bottom: 8px;
+    }
+
+    .p-film {
+        font-size: 18px;
+
+        color: #585858;
+    }
+
+}
+
+@media screen and (min-width:1020px) {
+    body {
+        height: 100vh;
+        background-image: url('img/bg-arcane.svg');
+        background-position: center;
+        /*Center the image*/
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img-arcane {
+        width: 400px;
+    }
+
+    .rectangle-mobile {
+        display: none;
+    }
+
+    .rectangle-desktop {
+        display: block;
+        width: 600px;
+    }
+
+    .content-film {
+        margin-left: 50px;
+        padding-left: 10px;
+    }
+
+    .film {
+        background-image: url('img/video.svg');
+        width: 144px;
+        height: 107px;
+        position: absolute;
+        margin-right: 500px;
+        margin-top: 15px;
+    }
+
+    .title-film {
+        font-size: 30px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .p-film {
+        font-size: 25px;
+    }
+}
